@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+/*For the background of the app*/
+/*
+.app-background {
+  display: inline;
+}*/
+
+.round-trian {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 600px;
+  background: linear-gradient(
+    298deg,
+    rgba(232, 66, 255, 1) 0%,
+    rgba(135, 56, 255, 1) 76%
+  );
+  border-radius: 50px;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 33%;
+  width: 150px;
+  height: 130px;
+  background: white;
+}
+
+.chat-ui {
+  padding-top: 100px;
+  padding-right: 100px;
+  width: 300px;
+  height: 600px;
+  border: 6px solid white;
+  border-radius: 50px;
+  color: hsl(270, 20%, 96%);
+}
+
+.head-prof {
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    298deg,
+    rgba(232, 66, 255, 1) 0%,
+    rgba(135, 56, 255, 1) 76%
+  );
+  border-top-right-radius: 12%;
+  border-top-left-radius: 12%;
+}
+.back-btn {
+  margin-top: 20px;
+}
+.prof {
+  padding-top: 2rem;
+}
+.chat-prof {
+  padding-top: 8px;
+  padding-left: 20px;
+  display: inline-flex;
+}
+
+.prof-img img {
+  max-width: 35px;
+  max-height: 35px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
+
+.prof-text {
+  padding-left: 6px;
+}
+
+.prof-text h4 {
+  color: hsl(0, 0%, 100%);
+}
+
+.prof-text p {
+  color: hsl(270, 94%, 79%);
+  font-size: 0.7rem;
+}
+
+.back-btn .fa,
+.head-menu .fa {
+  color: white;
+}
+.fa-angle-left {
+  padding-bottom: 50px;
+}
+
+.msg-1,
+.msg-2,
+.msg-c-1 {
+  margin-left: 14px;
+  padding: 6px;
+  margin-block-end: 8px;
+  background-color: hsl(266, 100%, 99%);
+  color: hsl(276, 79%, 48%);
+  width: 200px;
+  border-radius: 10px;
+}
+
+.msg-1 p,
+.msg-2 p,
+.msg-b-1 p,
+.msg-b-2 p,
+.msg-c-1 p {
+  font-size: 0.7rem;
+}
+
+.msg-b {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.msg-img {
+  padding-left: 127px;
+}
+
+.msg-img img {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 13px;
+}
+
+.msg-b-1,
+.msg-b-2 {
+  padding-left: 97px;
+  margin-left: 15px;
+  color: black;
+  background-color: white;
+  margin: 0.35rem;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.msg-c-1 {
+  padding-top: 20px;
+  line-height: 1.25;
+}
+
+/*For the radio button*/
+
+.msg-check-1,
+.msg-check-2 {
+  padding: 0.52rem;
+  display: inline-flex;
+  background: rgb(232, 66, 255);
+  background: linear-gradient(
+    111deg,
+    rgba(232, 66, 255, 1) 21%,
+    rgba(135, 56, 255, 1) 55%
+  );
+  color: antiquewhite;
+  border-radius: 0.55rem 0.55rem;
+  width: 210px;
+}
+
+.radio-text-style {
+  font-size: 0.85rem;
+}
+
+.msg-check-2 {
+  margin-top: 1rem;
+}
+
+.price {
+  padding-left: 4rem;
+}
+
+.msg-box {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  height: 2.25rem;
+}
+
+.send-msg .fa {
+  color: white;
+  background-color: hsl(271, 36%, 24%);
+  padding: 5px 12px;
+  border-radius: 50px;
+}
+
+.send-msg {
+  padding-top: 21px;
+  padding-left: 10px;
+}
+
+/*For the Text Section*/
+
+.text-ui {
+  width: 450px;
+  line-height: 1.7;
+}
+
+.text-ui h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(271, 36%, 24%);
+}
+
+.text-ui p {
+  color: hsl(270, 7%, 64%);
+}
+
+/*FOr the media querry section*/
+
+@media screen and (min-width: 355px) and (max-width: 890px) {
+  main {
+    flex-direction: column;
+  }
+
+  .head-prof {
+    margin-top: 6rem;
+  }
+
+  .text-ui {
+    padding-right: 2rem;
+    padding-top: 7rem;
+    width: 320px;
+    text-align: center;
+  }
+
+  .attribution {
+    padding-top: 10rem;
+  }
+}
+/*For The link display*/
+.attribution {
+  text-align: center;
+  font-size: 11px;
+  width: 300px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
